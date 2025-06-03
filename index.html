@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+    }
+    .login-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="senha" placeholder="Senha" />
+    <button onclick="fazerLogin()">Entrar</button>
+  </div>
+
+  <script>
+    const emailCorreto = 'usuario@exemplo.com';
+    const senhaCorreta = 'senha123';
+
+    function fazerLogin() {
+      const email = document.getElementById('theradiodemon@gmail.com').value;
+      const senha = document.getElementById('arise').value;
+
+      if (email === emailCorreto && senha === senhaCorreta) {
+        window.location.href = 'home.html';
+      } else {
+        alert('Dados de email e senha não conferem');
+      }
+    }
+  </script>
+</body>
+</html>
